@@ -9,7 +9,9 @@
 	--color-dark: #1C6474;
 	--color-contact: #D8D3A8;
 }
-
+html {
+	scroll-behavior: smooth;
+}
 .visually-hidden {
 	position: absolute;
 	width: 1px;
