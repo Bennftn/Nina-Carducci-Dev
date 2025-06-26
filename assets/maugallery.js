@@ -1,3 +1,5 @@
+// initialisation du plugin jQuery
+
 (function($) {
   $.fn.mauGallery = function(options) {
     var options = $.extend($.fn.mauGallery.defaults, options);
@@ -40,6 +42,9 @@
       $(this).fadeIn(500);
     });
   };
+
+// parametre par défaut
+
   $.fn.mauGallery.defaults = {
     columns: 3,
     lightBox: true,
@@ -48,6 +53,8 @@
     tagsPosition: "bottom",
     navigation: true
   };
+
+// ecouteurs d'évènements
   $.fn.mauGallery.listeners = function(options) {
     $(".gallery-item").on("click", function() {
       if (options.lightBox && $(this).prop("tagName") === "IMG") {
@@ -65,7 +72,10 @@
       $.fn.mauGallery.methods.nextImage(options.lightboxId)
     );
   };
+
+// Méthodes utilitaires du plugin
   $.fn.mauGallery.methods = {
+// structure HTML
     createRowWrapper(element) {
       if (
         !element
@@ -76,6 +86,7 @@
         element.append('<div class="gallery-items-row row"></div>');
       }
     },
+// Responsive + colonnes Bootstrap
     wrapItemInColumn(element, columns) {
       if (columns.constructor === Number) {
         element.wrap(
@@ -105,6 +116,7 @@
         );
       }
     },
+// affichage de la lightbox
     moveItemInRowWrapper(element) {
       element.appendTo(".gallery-items-row");
     },
@@ -158,6 +170,7 @@
         imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
+// navigation lightbox
     nextImage() {
       let activeImage = null;
       $("img.gallery-item").each(function() {

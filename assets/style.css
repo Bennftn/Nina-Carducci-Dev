@@ -127,7 +127,7 @@ nav a {
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: var(--color-accent);
+	background-color: #786D30;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
@@ -270,6 +270,11 @@ input[type="submit"] {
 	font-weight: 800;
 	font-size: 1.1em;
 	margin-top: 1em;
+	color: black;
+}
+
+.quote__text {
+	color: black;
 }
 
 /* Fond spécifique */
@@ -278,7 +283,33 @@ input[type="submit"] {
 }
 
 .quote--services {
-	background-color: var(--color-dark); /* fond des services */
+	background-color: var(--color-bg-services); /* fond des services */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	background-color: rgba(0, 0, 0, 0.5); /* couleur de fond, à ajuster */
+	background-size: 100% 100%;
+	border-radius: 50%;
+}
+
+/* Pour s'assurer que l'icône blanche soit bien visible */
+.carousel-control-prev-icon {
+	filter: invert(1); /* rend l’icône blanche noire */
+}
+
+.carousel-control-next-icon {
+	filter: invert(1); /* rend l’icône blanche noire */
+}
+.carousel-indicators [data-bs-target] {
+  background-color: #000 !important; /* Couleur foncée pour bon contraste */
+  opacity: 0.8;
+   border: 1px solid white; /* Ajout */
+}
+
+.carousel-indicators .active {
+  background-color: #fff !important; /* Contraste clair/foncé avec les inactifs */
+  opacity: 1;
 }
 
 
