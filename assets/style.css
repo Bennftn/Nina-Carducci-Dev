@@ -115,9 +115,7 @@ nav a {
 	font-size: 14px;
 }
 
-#gallery {
-	/*	min-height: 100vh; */
-}
+
 .title{
 	text-align: center;
 	padding-block: 2em;
@@ -283,7 +281,7 @@ input[type="submit"] {
 }
 
 .quote--services {
-	background-color: var(--color-bg-services); /* fond des services */
+	background-color: #fff; /* fond des services */
 }
 
 .carousel-control-prev-icon,
@@ -310,6 +308,11 @@ input[type="submit"] {
 .carousel-indicators .active {
   background-color: #fff !important; /* Contraste clair/foncé avec les inactifs */
   opacity: 1;
+}
+
+.picture img {
+	width: 400px;
+	height: 400px;
 }
 
 
