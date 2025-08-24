@@ -159,8 +159,6 @@ nav a {
 	font-size: 24px;
 }
 
-
-
 #services {
 	margin: auto;
 	background-color: var(--color-bg-services);
@@ -250,7 +248,6 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
-/* Base des citations */
 .quote {
 	text-align: center;
 	padding-block: 3em;
@@ -275,38 +272,36 @@ input[type="submit"] {
 	color: black;
 }
 
-/* Fond spécifique */
 .quote--white {
-	background-color: #fff; /* fond du portfolio */
+	background-color: #fff;
 }
 
 .quote--services {
-	background-color: #fff; /* fond des services */
+	background-color: #fff;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-	background-color: rgba(0, 0, 0, 0.5); /* couleur de fond, à ajuster */
+	background-color: rgba(0, 0, 0, 0.5);
 	background-size: 100% 100%;
 	border-radius: 50%;
 }
 
-/* Pour s'assurer que l'icône blanche soit bien visible */
 .carousel-control-prev-icon {
-	filter: invert(1); /* rend l’icône blanche noire */
+	filter: invert(1);
 }
 
 .carousel-control-next-icon {
-	filter: invert(1); /* rend l’icône blanche noire */
+	filter: invert(1);
 }
 .carousel-indicators [data-bs-target] {
-  background-color: #000 !important; /* Couleur foncée pour bon contraste */
+  background-color: #000 !important;
   opacity: 0.8;
-   border: 1px solid white; /* Ajout */
+   border: 1px solid white;
 }
 
 .carousel-indicators .active {
-  background-color: #fff !important; /* Contraste clair/foncé avec les inactifs */
+  background-color: #fff !important;
   opacity: 1;
 }
 
@@ -314,6 +309,16 @@ input[type="submit"] {
 	width: 400px;
 	height: 400px;
 }
+
+
+.nav-pills .nav-link.active-tag {
+  color: #fff;
+  background-color: #786D30;
+  border-radius: 0;
+}
+
+.tags-bar .nav-link { cursor: pointer; }
+.tags-bar .nav-link:focus { outline: 2px solid #786D30; outline-offset: 2px; }
 
 
 
